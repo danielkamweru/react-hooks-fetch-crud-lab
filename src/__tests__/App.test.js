@@ -6,7 +6,7 @@ import {
   screen,
   waitForElementToBeRemoved,
 } from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect";
+import "@testing-library/jest-dom";  // ✅ updated import
 import { server } from "../mocks/server";
 
 import App from "../components/App";
@@ -14,6 +14,8 @@ import App from "../components/App";
 beforeAll(() => server.listen());
 afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
+
+// your tests remain unchanged
 
 test("displays question prompts after fetching", async () => {
   render(<App />);

@@ -24,7 +24,7 @@ function App() {
     setQuestions((prev) => prev.filter((q) => q.id !== id));
   }
 
-  //  HANDLE UPDATE 
+  //  HANDLE UPDATE crud 
   function handleUpdateQuestion(updatedQuestion) {
     setQuestions((prev) =>
       prev.map((q) => (q.id === updatedQuestion.id ? updatedQuestion : q))
