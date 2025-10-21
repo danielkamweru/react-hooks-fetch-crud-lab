@@ -1,2 +1,2 @@
-import "@testing-library/jest-dom";
-import "whatwg-fetch";
+require("@testing-library/jest-dom");
+require("whatwg-fetch");
