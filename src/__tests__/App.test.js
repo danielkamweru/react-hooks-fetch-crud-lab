@@ -6,7 +6,7 @@ import {
   screen,
   waitForElementToBeRemoved,
 } from "@testing-library/react";
-import "@testing-library/jest-dom";  // ✅ updated import
+import "@testing-library/jest-dom";  // updated import
 import { server } from "../mocks/server";
 
 import App from "../components/App";
